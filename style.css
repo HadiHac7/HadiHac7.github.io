@@ -1,5 +1,7 @@
 body {
-    background: rgb(132, 32, 190);
+    
+    background-image: url("https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/0e/GreenGojoSSRArt1.gif/revision/latest/scale-to-width-down/600?cb=20240221044557");
+    background-size: 100%;
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -16,7 +18,7 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
-    border: 6px solid red;
+    border: 12px rgb(219, 11, 11) ridge;
     border-radius: 50px;
 }
 h1 {
@@ -36,21 +38,23 @@ h1 {
 a {
     display: flex;
     text-decoration: none;
-    color: #b700ff;
+    color: #ff0000;
 }
 
 /* main container area beneath menu */
 main {
+    margin-bottom: 20px;
     background: rgb(3, 133, 255);
     display: flex;
     border-radius: 25px;
+    border: 6px rgb(219, 11, 11) ridge;
 }
 .sidebar {
     margin-right: 25px;
     padding: 10px;
 }
 .sidebar-img {
-    width: 200px;
+    width: 300px;
 }
 .content {
     flex: 1;
@@ -64,4 +68,35 @@ main {
 }
 h2, h3 {
     margin: 0px;
+}
+
+/*Bottom Gif Style*/
+.bottomgif {
+    border: 12px rgb(219, 11, 11) ridge;
+}
+
+/* portfolio styles */
+.content h1 {
+    color: rgb(190, 7, 7);
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #9d0000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #eee;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #007dc5;
 }
