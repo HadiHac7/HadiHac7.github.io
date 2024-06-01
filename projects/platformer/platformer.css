@@ -3,7 +3,10 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
+  background-image: url(https://th.bing.com/th/id/R.d96340b84576a9720ad2971989000217?rik=ElMweqihN65oFg&pid=ImgRaw&r=0);
+  background-size:100%;
+
+
 }
 
 img {
