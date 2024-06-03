@@ -22,9 +22,9 @@ nav {
     border-radius: 50px;
 }
 h1 {
+    font-family: Impact, fantasy;
     display: flex;
     align-items: center;
-    color: rgb(196, 0, 0);
     flex: 1;
     margin: 0;
 }
@@ -39,6 +39,7 @@ a {
     display: flex;
     text-decoration: none;
     color: #ff0000;
+    font-family: Impact, fantasy;
 }
 
 /* main container area beneath menu */
@@ -54,11 +55,17 @@ main {
     padding: 10px;
 }
 .sidebar-img {
+    margin-top: 25px;
     width: 300px;
+    padding: 10px;
 }
 .content {
     flex: 1;
     padding: 15px;
+}
+
+.contentWords {
+    color:#b12d2d;
 }
 
 /* portfolio styles */
@@ -68,6 +75,7 @@ main {
 }
 h2, h3 {
     margin: 0px;
+    color:#b12d2d;
 }
 
 /*Bottom Gif Style*/
@@ -104,7 +112,7 @@ h1 {
 
 /* portfolio styles */
 .content h1 {
-    color: rgb(190, 7, 7);
+    color: #f15e5e;
 }
 
 #portfolio {
@@ -120,10 +128,23 @@ h1 {
 }
 
 #portfolio li:hover {
-    background: #eee;
+    background: #f98585;
 }
 
 #portfolio a {
     text-decoration: none;
     color: #007dc5;
+}
+
+.neonText {
+    color: #f15e5e;
+  text-shadow:
+    0 0 7px #ff0000,
+    0 0 10px #ff0000,
+    0 0 21px #ff0000,
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(255, 0, 0),
+    0 0 92px rgb(255, 0, 0),
+    0 0 102px rgb(255, 0, 0),
+    0 0 151px rgb(255, 0, 0);
 }

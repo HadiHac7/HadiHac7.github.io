@@ -55,6 +55,7 @@ main {
 }
 .sidebar-img {
     width: 300px;
+    padding: 10px;
 }
 .content {
     flex: 1;
