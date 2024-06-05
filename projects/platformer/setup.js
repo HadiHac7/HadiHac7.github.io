@@ -91,10 +91,16 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
+  gumgum: { image: "images/collectables/gumgum.png" },
+  enma: { image: "images/collectables/enma.png" },
+  thousandsunny: { image: "images/collectables/thousandsunny.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
 };
+
+var platimage = draw.bitmap("https://img.freepik.com/free-vector/flat-design-wood-texture-illustration_23-2149273582.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717286400&semt=ais_user");
+platimage.x = 10;
+platimage.y = 100;
+platimage.scaleX = 1;
+platimage.scaleY = 1;

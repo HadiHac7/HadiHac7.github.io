@@ -358,22 +358,22 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "yellow";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
   );
-  ctx.fillStyle = "black";
-  ctx.font = "800% serif";
+  ctx.fillStyle = "red";
+  ctx.font = "800% impact";
   ctx.fillText(
     "You are dead",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
-  ctx.font = "500% serif";
+  ctx.font = "500% impact";
   ctx.fillText(
     "Hit any key to restart",
     canvas.width / 4,
@@ -409,9 +409,23 @@ function playerFrictionAndGravity() {
   }
 }
 
+var image = new Image();
+image.src = "https://img.freepik.com/free-vector/flat-design-wood-texture-illustration_23-2149273582.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717286400&semt=ais_user";
+
+image.onload = function() {
+  drawPlatforms();
+};
+
+image.onerror = function() {
+  console.error("Failed to load image");
+};
+
 function drawPlatforms() {
   for (var i = 0; i < platforms.length; i++) {
-    ctx.fillStyle = "grey";
+    var platform = platforms[i];
+    var pattern = ctx.createPattern(image, "repeat");
+
+    ctx.fillStyle = pattern;
     ctx.fillRect(
       platforms[i].x,
       platforms[i].y,
