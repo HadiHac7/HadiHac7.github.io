@@ -8,6 +8,61 @@
     <script src="setup.js"></script>
     <script src="helpers.js"></script>
     <script src="platformer.js"></script>
+
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 360px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #d09d27;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+  
+      #word {
+        font-size: 40px;
+        color: rgb(218, 33, 8);
+        font-family: Impact, fantasy;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      #word2 {
+        font-size:20px;
+        color:black;
+        text-align:left;
+      }
+      </style>
   </head>
 
   <body id="body">
@@ -16,62 +71,15 @@
     <img id="player" src="images/halle.png" />
     <img id="projectile" src="images/projectile.png" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" />
-
-    <style>
-    body {
-      font-family: "Lato", sans-serif;
-    }
-    
-    .sidenav {
-      height: 100%;
-      width: 720px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #d09d27;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-    
-    .sidenav a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-    }
-    
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-    
-    .main {
-      margin-left: 160px; /* Same as the width of the sidenav */
-      font-size: 28px; /* Increased text to enable scrolling */
-      padding: 0px 10px;
-    }
-    
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-
-    #word {
-      font-size: 40px;
-      color: red;
-      font-family: fantasy;
-    }
-    </style>
-    </head>
-    <body>
     
     <div class="sidenav">
-      <a href="#services">Services</a>
+      <h1 id="word">TREASURE COLLECTOR</h1>
+      <h3 id="word2">GAME DESCRIPTION</h3>
       <a href="#clients">Clients</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <img src="/Images/TreasureCollector.png">
+    <p>HEHE</p>
+    <img width="700px" src="https://imagetolink.com/ib/hQ8lyIWwV4.png">
   </body>
 </html>
