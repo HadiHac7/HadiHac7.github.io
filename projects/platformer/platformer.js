@@ -44,14 +44,25 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
  
-    createPlatform(200, 625, 200, 20);
-    createPlatform(1000, 625, 200, 20);
-    createPlatform(550, 400, 300, 20);
-    createPlatform(450, 525, 100, 20);
-    createPlatform(850, 525, 100, 20);
-    createPlatform(0, 275, 400, 20);
+    createPlatform(200, 625, 100, 15);
+    createPlatform(1000, 625, 200, 15);
+    createPlatform(550, 400, 300, 15);
+    createPlatform(350, 525, 140, 15);
+    createPlatform(850, 525, 100, 15);
+    createPlatform(0, 275, 140, 15);
+    createPlatform(0, 500, 120, 15);
     createPlatform(1000, 275, 400, 20);
     createPlatform(1390, 0, 10, 800);
+    createPlatform(120, 470, 10, 45);
+    createPlatform(200, 0, 10, 400)
+    createPlatform(350, 100, 10, 500);
+    createPlatform(325, 500, 25, 10);
+    createPlatform(200, 400, 25, 10);
+    createPlatform(325, 300, 25, 10);
+    createPlatform(200, 225, 25, 10);
+    
+    
+
     
 
 
@@ -61,7 +72,7 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("gumgum", 500, 300, 20, 0.5);
+    createCollectable("gumgum", 450, 300, 20, 0.5);
     createCollectable("enma", 750, 100, 10, 0.1);
     createCollectable("thousandsunny", 1300, 50, 10, 0.1);
 
@@ -72,7 +83,10 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-    createCannon("left", 600, 1000);
+    createCannon("left", 600, 500);
+    createCannon("bottom", 275, 2000);
+    createCannon("top", 300, 3000);
+    createCannon("left", 0, 2500);
 
 
 
