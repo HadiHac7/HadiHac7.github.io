@@ -84,7 +84,9 @@ $(function () {
     createPlatform(575, 250, 50, 15);
     createPlatform(500, 325, 25, 10);
     createPlatform(500, 175, 25, 10);
-    createPlatform(575, 125, 300, 10);
+    createPlatform(600, 125, 300, 10);
+
+    
     
 
 
@@ -102,6 +104,7 @@ $(function () {
     createCollectable("gumgum", 205, 300, 20, 0.5);
     createCollectable("enma", 50, 300, 1, 1);
     createCollectable("thousandsunny", 1300, 50, 10, 0.1);
+    
 
 
 
