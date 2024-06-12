@@ -5,10 +5,15 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+	body{
+			background-image: url(https://staticg.sportskeeda.com/editor/2023/09/6f6db-16950807622217-1920.jpg);
+			background-size: 100%;
+		}
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
+			width: 100px;
+			height: 100px;
+			background-image: url(https://tiermaker.com/images/template_images/2022/15467140/kibishi-jujutsu-kaisen-version-30-15467140/todo-goodwilljpg.png);
+			background-size: 100%;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -48,8 +53,9 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
+				box.css("top", newPositionY);
 			}
 
 			// changes the text displayed on the Box
@@ -65,6 +71,10 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10;
+			var positionY = 0;
+			var speedY = 10;
+			var boardHeight = jQuery(window).height(); 
+			
 
 
 			
@@ -75,13 +85,21 @@
 			*/
 			function update() {
 				positionX = positionX + speed;
-				moveBoxTo(positionX);
+				positionY = positionY + speedY;
+				moveBoxTo(positionX, positionY);
 
 				if (positionX > boardWidth){
 					speed = -speed;
 				}
 				if (positionX < 0){
 					speed = -speed;
+				}
+
+				if (positionY > boardHeight){
+					speedY = -speedY;
+				}
+				if (positionY < 0){
+					speedY = -speedY;
 				}
 			};
 
@@ -94,10 +112,20 @@
 				positionX = 0;
 				changeBoxText(points);
 				points = points + 1;
-				speed = speed + 3;
-				
-
-
+				if (speed > 0) {
+					speed = speed + 3;
+				}
+				else if (speed < 0) {
+					speed = speed - 3;
+				}
+				if (speedY > 0) {
+					speedY = speedY + 3;
+				}	
+				else if (speed < 0) {
+					speedY = speedY - 3;
+				}
+				let mySound = new Audio('ClapEffect.mp3');
+				mySound.play()
 			};
 		})();
 	</script>
