@@ -300,7 +300,7 @@
     	randomRadialProps: function (area, radiusMin, radiusMax, redMax, greenMax, blueMax) {
     	    return {
     	        radius: randomIntBetween(radiusMin || 5, radiusMax || 20),
-    	        color: randomColor(redMax || 255, greenMax || 255, blueMax || 255),
+    	        color: randomColor(redMax || 0, greenMax ||175, blueMax || 150),
     	        x: randomIntBetween(0, area.width),
     	        y: randomIntBetween(0, area.height)
     	    };
@@ -317,7 +317,7 @@
         blurFilterOn: blurFilterOn,
         
         fps: function (color) {
-            color = (color) ? color : '#FFF';
+            color = (color) ? color : '#FF0000';
             var _textfield = new createjs.Text("-- fps", "bold 15px Arial", color);
             var _fps = new createjs.Container();
             _fps.textfield = _textfield;
