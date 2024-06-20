@@ -43,7 +43,7 @@
         window.addEventListener('resize', resizeCanvas, false);
         function resizeCanvas(e) {
             _canvas.width = window.innerWidth;
-            _canvas.height = window.innerHeight;
+            _canvas.height = window.innerHeight - 200;
             if (e) { _app.update(e) }
         }
         resizeCanvas();
