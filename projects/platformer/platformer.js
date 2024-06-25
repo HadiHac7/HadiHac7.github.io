@@ -84,7 +84,23 @@ $(function () {
     createPlatform(575, 250, 50, 15);
     createPlatform(500, 325, 25, 10);
     createPlatform(500, 175, 25, 10);
-    createPlatform(600, 125, 300, 10);
+    createPlatform(600, 125, 725, 10);
+    createPlatform(1000, 125, 10, 150);
+    createPlatform(1000, 0, 10, 25);
+    createPlatform(1325, 125, 10, 75);
+    createPlatform(1050, 175, 5, 75);
+    createPlatform(1050, 175, 50, 5);
+    createPlatform(1050, 250, 50, 5);
+    createPlatform(1050, 215, 30, 5);
+    createPlatform(1125, 175, 5, 80);
+    createPlatform(1125, 185, 50, 5);
+    createPlatform(1175, 185, 5, 70);
+    createPlatform(1200, 175, 5, 80);
+    createPlatform(1205, 185, 45, 5);
+    createPlatform(1250, 190, 5, 50);
+    createPlatform(1205, 240, 45, 5);
+    
+
 
     
     
@@ -101,12 +117,17 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("gumgum", 205, 300, 20, 0.5);
-    createCollectable("enma", 50, 300, 1, 1);
-    createCollectable("thousandsunny", 1300, 50, 10, 0.1);
-    
-
-
+    createCollectable("gumgum", 210, 300, 0.1, 1);
+    createCollectable("enma", 50, 300, 0.1, 1);
+    createCollectable("thousandsunny", 1300, 200, 0.1, 1);
+    createCollectable("moneysack", 375, 575, 0.1, 1);
+    createCollectable("kabuto", 650, 525, 0.1, 1);
+    createCollectable("sanjirose", 725, 525, 0.1, 1);
+    createCollectable("poneglyph", 865, 625, 0.1, 1);
+    createCollectable("chopperhat", 1250, 675, 0.1, 1);
+    createCollectable("generalfranky", 885, 425, 0.1, 1);
+    createCollectable("brookviolin", 575, 325, 0.1, 1);
+    createCollectable("sunpirates", 800, 50, 0.1, 1);
 
     // TODO 3
     // Create cannons
@@ -122,7 +143,7 @@ $(function () {
     createCannon("right", 375, 5500);
     createCannon("bottom", 1320, 2500);
     createCannon("top", 970, 3500);
-    createCannon("bottom", 100, 2000)
+    createCannon("bottom", 100, 2000);
 
 
 

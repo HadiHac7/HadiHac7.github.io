@@ -71,8 +71,8 @@ let offsetY = 0;
 // Platform, cannon, projectile, and collectable variables
 let platforms = [];
 let cannons = [];
-const cannonWidth = 118;
-const cannonHeight = 80;
+const cannonWidth = 100;
+const cannonHeight = 60;
 let projectiles = [];
 const defaultProjectileWidth = 24;
 const defaultProjectileHeight = defaultProjectileWidth;
@@ -94,9 +94,15 @@ var collectableList = {
   gumgum: { image: "images/collectables/gumgum.png" },
   enma: { image: "images/collectables/enma.png" },
   thousandsunny: { image: "images/collectables/thousandsunny.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  moneysack: { image: "images/collectables/moneysack.png" },
+  kabuto: { image: "images/collectables/kabuto.png" },
+  sanjirose: { image: "images/collectables/sanjirose.png" },
+  poneglyph: { image: "images/collectables/poneglyph.png" },
+  chopperhat: { image: "images/collectables/chopperhat.png" },
+  generalfranky: { image: "images/collectables/generalfranky.png" },
+  brookviolin: { image: "images/collectables/brookviolin.png" },
+  sunpirates: { image: "images/collectables/sunpirates.png" },
+
 };
 
 var platimage = draw.bitmap("https://img.freepik.com/free-vector/flat-design-wood-texture-illustration_23-2149273582.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717286400&semt=ais_user");

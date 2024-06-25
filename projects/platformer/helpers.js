@@ -358,7 +358,7 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "yellow";
+  ctx.fillStyle = "#d09d27";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
@@ -368,14 +368,14 @@ function deathOfPlayer() {
   ctx.fillStyle = "red";
   ctx.font = "800% impact";
   ctx.fillText(
-    "You are dead",
+    "You got hit!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
   ctx.font = "500% impact";
   ctx.fillText(
-    "Hit any key to restart",
+    "Tap any key to restart",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14

@@ -15,7 +15,7 @@ audio {
     border-radius: 40px;
     padding: 15px;
     height: 70px;
-    width: 400px;
+    width: 1100px;
 }
 #firstMusic {
     position: absolute; 
@@ -23,5 +23,5 @@ audio {
 }
 #secondMusic {
     position: absolute;
-    left: 1800px;
+    left: 1125px;
 }
