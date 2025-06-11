@@ -28,13 +28,13 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(3, 133, 255);
+    background: rgb(175, 3, 255);
    margin: 0 auto;
    margin-bottom: 10px;
     display: flex;
     padding: 10px;
-    border: 12px rgb(219, 11, 11) ridge;
-    border-radius: 50px;
+    border: 12px rgb(255, 255, 255) ridge;
+    border-radius: 1px;
 }
 h1 {
     font-family: Impact, fantasy;
@@ -152,19 +152,19 @@ h1 {
 }
 
 .neonText {
-    color: #f15e5e;
+    color: #ffffff;
   text-shadow:
-    0 0 7px #ff0000,
-    0 0 10px #ff0000,
-    0 0 21px #ff0000,
-    0 0 42px rgb(255, 0, 0),
-    0 0 82px rgb(255, 0, 0),
-    0 0 92px rgb(255, 0, 0),
-    0 0 102px rgb(255, 0, 0),
-    0 0 151px rgb(255, 0, 0);
+    0 0 7px #e3e3e3,
+    0 0 10px #d5d5d5,
+    0 0 21px #bebebe,
+    0 0 42px rgb(240, 240, 240),
+    0 0 82px rgb(248, 248, 248),
+    0 0 92px rgb(206, 206, 206),
+    0 0 102px rgb(219, 219, 219),
+    0 0 151px rgb(190, 190, 190);
 }
 #bgmusic {
     position: absolute;
-    left: 800px;
-    top: 500px;
+    left: 500px;
+    top: 800px;
 }
