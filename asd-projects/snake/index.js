@@ -67,16 +67,14 @@ function init() {
  */
 function update() {
   // TODO 5b: Fill in the update function's code block
-  function update() {
-    moveSnake();
+  moveSnake();
 
-    if (hasHitWall() || hasCollidedWithSnake()) {
-      endGame();
-    }
+  if (hasHitWall() || hasCollidedWithSnake()) {
+    endGame();
+  }
 
-    if (hasCollidedWithApple()) {
-      handleAppleCollision();
-    }
+  if (hasCollidedWithApple()) {
+    handleAppleCollision();
   }
 }
 
@@ -113,6 +111,7 @@ function moveSnake() {
   column/row properties. 
   
   */
+  
 
   //Before moving the head, check for a new direction from the keyboard input
   checkForNewDirection();
@@ -145,8 +144,12 @@ function hasHitWall() {
   
   HINT: What will the row and column of the snake's head be if this were the case?
   */
-
-  return false;
+  if (snake.head.row <= -1 || snake.head.row >= 20 || snake.head.column <= -1 || snake.head.column >= 20) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function hasCollidedWithApple() {
@@ -156,8 +159,12 @@ function hasCollidedWithApple() {
   
   HINT: Both the apple and the snake's head are aware of their own row and column
   */
-
-  return false;
+  if (apple.row === snake.head.row && apple.column === snake.head.column) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function handleAppleCollision() {
@@ -178,8 +185,22 @@ function handleAppleCollision() {
   If the tail is moving "down", place the next snakeSquare above it.
   etc...
   */
-  var row = 0;
-  var column = 0;
+if (snake.tail.direction === "left") {
+  row = snake.tail.row;
+  column = snake.tail.column + 1; // Place the new piece to the RIGHT of the tail
+}
+else if (snake.tail.direction === "right") {
+  row = snake.tail.row;
+  column = snake.tail.column - 1;
+}
+else if (snake.tail.direction === "up") {
+  row = snake.tail.row + 1;
+  column = snake.tail.column;
+}
+else if (snake.tail.direction === "down") {
+  row = snake.tail.row - 1;
+  column = snake.tail.column;
+}
 
   // code to determine the row and column of the snakeSquare to add to the snake
 
