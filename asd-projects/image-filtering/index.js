@@ -4,6 +4,7 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
+  applyFilter();
 });
 
 /////////////////////////////////////////////////////////
@@ -32,7 +33,13 @@ function applyAndRender() {
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2, 3 & 5: Create the applyFilter function here
-
+function applyFilter() {
+  for (i = 0; i < image.length; i++) {
+    for (j = 0; j < i.length; i++) {
+      
+    }
+  }
+}
 
 // TODO 9 Create the applyFilterNoBackground function
 
