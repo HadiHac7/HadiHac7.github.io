@@ -4,10 +4,6 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
-  applyFilter(reddify);
-  applyFilterNoBackground(increaseGreenByBlue);
-  applyFilterNoBackground(reddify);
-  applyFilter(decreaseBlue);
 });
 
 /////////////////////////////////////////////////////////
@@ -24,8 +20,10 @@ function resetAndRender() {
 // all of your apply functions
 function applyAndRender() {
   // Multiple TODOs: Call your apply function(s) here
-
-  
+  applyFilter(reddify);
+  applyFilterNoBackground(increaseGreenByBlue);
+  applyFilterNoBackground(reddify);
+  applyFilter(decreaseBlue);
 
   // do not change the below line of code
   render($("#display"), image);
@@ -49,10 +47,9 @@ function applyFilter(filterFunction) {
   }
 }
 
-
 // TODO 9 Create the applyFilterNoBackground function
 function applyFilterNoBackground(filterFunction) {
-  var backgroundColor= image[0][0];
+  var backgroundColor = image[0][0];
   for (i = 0; i < image.length; i++) {
     for (j = 0; j < image[i].length; j++) {
       if (image[i][j] !== backgroundColor) {
@@ -70,11 +67,9 @@ function applyFilterNoBackground(filterFunction) {
 function keepInBounds(numValue) {
   if (numValue < 0) {
     return 0;
-  }
-  else if (numValue > 255) {
+  } else if (numValue > 255) {
     return 255;
-  }
-  else {
+  } else {
     return numValue;
   }
 }
